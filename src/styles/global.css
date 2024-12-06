@@ -14,17 +14,16 @@ body {
   background-color: var(--bg-color);
   margin: 0;
   padding: 0;
-  padding-top: calc(var(--header-height) + 2rem);
-  display: flex;
-  flex-direction: column;
+  padding-top: calc(
+    var(--header-height) + 1rem
+  ); /* Update 1: Adjusted padding-top */
   min-height: 100vh;
 }
 
 main {
-  max-width: 800px;
-  margin: 2rem auto;
+  max-width: 1200px;
+  margin: 1rem auto; /* Update 2: Adjusted margin */
   padding: 0 1rem;
-  flex-grow: 1;
 }
 
 h1,
@@ -50,10 +49,6 @@ a:hover {
 @media (max-width: 640px) {
   body {
     font-size: 14px;
-    padding-top: calc(var(--header-height) + 3rem);
-  }
-
-  main {
-    margin-top: 1rem;
+    padding-top: calc(var(--header-height) + 1rem);
   }
 }

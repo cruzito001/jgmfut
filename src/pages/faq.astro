@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FAQ from '../components/faq/FAQ';
+import { faqItems } from '../data/faq';
+---
+
+<Layout title="JGMFUT - FAQ">
+	<main>
+		<FAQ client:load items={faqItems} />
+	</main>
+</Layout>
+

@@ -9,7 +9,7 @@ const Header: React.FC = () => {
           JGM<span>FUT</span>
         </a>
         <nav className={styles.nav}>
-          <a href="/downloads">Downloads</a>
+          <a href="/downloads">All Mods</a>
           <a href="/faq">FAQ</a>
         </nav>
       </div>

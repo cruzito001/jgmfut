@@ -1,11 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import GameList from '../components/games/GameList';
+import type { GameData } from '../data/games';
+
+const newModTitles = ['MAD FUT 25', 'SMOQ GAMES 25', 'MAD FUT GEN', 'NT 25'];
 ---
 
-<Layout title="JGMFUT">
+<Layout title="JGMFUT - New Mods">
 	<main>
-		<h1>Welcome to JGMFUT</h1>
-		<p>Your source for Android game mods and downloads.</p>
+		<GameList client:load newModTitles={newModTitles} title="NEW MODS" />
 	</main>
 </Layout>
 
